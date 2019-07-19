@@ -1,0 +1,180 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="top-bar" id="example-menu">
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <!-- <li class="menu-text">Site Title</li> -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech">Tech</a></li>
+            <li class="has-submenu">
+              <a href="#projects">Projects</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#vamtlab">Vamtlab</a></li>
+                <li><a href="#mad">Mad H St</a></li>
+                <li><a href="#reading-list">Reading List</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+        <!-- <div class="top-bar-right">
+          <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>
+        </div>
+      </div> -->
+    </header>
+    <main>
+      <h1 class="text-center">Alex Harasty</h1>
+      <section id="about">
+        <h2>About</h2>
+      </section>
+      <hr/>
+      <section id="tech">
+        <h2>Tech</h2>
+      </section>
+      <hr/>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p class="lead">I'm trying to be better about deploying stuff I'm working on even if there's nothing much to deploy.</p>
+        <article id="vamtlab" class="grid-x grid-margin-x">
+          <div class="cell small-6 large-4">
+            <div class="card">
+              <img src="/img/vamt.png">
+              <div class="card-section">
+                <h4>Vamtlab 2.0</h4>
+                <p>An app to aggregate and organize <a target="_blank" href="http://www.virginiamocktrial.org/welcome/welcome.php">my old mock trial team's</a> competition data.</p>
+                <a href="https://alexharasty.io/vamtlab/index.html" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="cell small-6 large-8">
+            <h4>Background</h4>
+            <p></p>
+            <h4>The Stack</h4>
+            <ul>
+              <li>S3</li>
+              <li>Route 53</li>
+              <li>Cloudfront</li>
+              <li>Angular 7</li>
+              <li>Angular Material</li>
+              <li>Okta</li>
+              <li>Django/Django Rest Framework</li>
+              <li>Postgres</li>
+              <li>Docker</li>
+            </ul>
+            <h4>Helpful Reading</h4>
+            <ul>
+              <li><a target="_blank" href="https://developer.okta.com/code/angular/okta_angular_sign-in_widget/">Okta Angular Integrations</a></li>
+            </ul>
+          </div>
+        </article>
+        <article id="mad" class="grid-x grid-margin-x">
+          <div class="cell small-6 large-4">
+            <div class="card">
+              <img src="/img/mad.png">
+              <div class="card-section">
+                <h4>Madabolic H Street</h4>
+                <p>A static site for getting more information about my favorite gym.</p>
+                <a href="http://mad-hstreet.com/" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="cell small-6 large-8">
+            <h4>Background</h4>
+            <p></p>
+            <h4>The Stack</h4>
+            <ul>
+              <li>S3</li>
+              <li>Route 53</li>
+              <li>JQuery</li>
+              <li>Google Sheets API</li>
+            </ul>
+            <h4>Helpful Reading</h4>
+            <ul>
+              <li><a target="_blank" href="https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396">Hooking up Google Sheets to a Form</a></li>
+            </ul>
+          </div>
+        </article>
+        <article id="reading-list" class="grid-x grid-margin-x">
+          <div class="cell small-6 large-4">
+            <div class="card">
+              <img src="/img/library.jpeg">
+              <div class="card-section">
+                <h4>Reading List</h4>
+                <p>A simple app to learning about React/Firebase </p>
+                <!-- <a href="#" target="_blank">View Project</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="cell small-6 large-8">
+            <h4>Background</h4>
+            <p></p>
+            <h4>The Stack</h4>
+            <ul>
+              <li>S3</li>
+              <li>Route 53</li>
+              <li>Cloudfront</li>
+              <li>React</li>
+              <li>Firebase</li>
+            </ul>
+            <h4>Helpful Reading</h4>
+            <ul>
+              <!-- <li><a target="_blank" href="https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396">Hooking up Google Sheets to a Form</a></li> -->
+            </ul>
+          </div>
+        </article>
+        <article id="personal" class="grid-x grid-margin-x">
+            <div class="cell small-6 large-4">
+              <div class="card">
+                <img src="/img/code.png">
+                <div class="card-section">
+                  <h4>Personal Site</h4>
+                  <p>A lesson in accountability </p>
+                  <!-- <a href="#" target="_blank">View Project</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="cell small-6 large-8">
+              <h4>Background</h4>
+              <p>I wanted something simple to learn Travis CI, and I'd heard good things about Foundation. Once I saw it had a CLI I couldn't get away from giving it a whirl.</p>
+              <h4>The Stack</h4>
+              <ul>
+                <li>S3</li>
+                <li>Route 53</li>
+                <li>Cloudfront</li>
+                <li>Foundation</li>
+                <li>Travis CI</li>
+              </ul>
+              <h4>Helpful Reading</h4>
+              <ul>
+                <li><a target="_blank" href="https://renzo.lucioni.xyz/s3-deployment-with-travis/">Travis CI w/ S3</a></li>
+              </ul>
+            </div>
+          </article>
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+  
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
