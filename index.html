@@ -4,16 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Alex Harasty</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" 
+      href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="top-bar" id="example-menu">
+        <div class="top-bar-left">
+          <span>Alex Harasty</span>
+        </div>
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
-            <!-- <li class="menu-text">Site Title</li> -->
             <li><a href="#about">About</a></li>
             <li><a href="#tech">Tech</a></li>
             <li class="has-submenu">
@@ -21,63 +25,72 @@
               <ul class="submenu menu vertical" data-submenu>
                 <li><a href="#vamtlab">Vamtlab</a></li>
                 <li><a href="#mad">Mad H St</a></li>
-                <li><a href="#reading-list">Reading List</a></li>
+                <!-- <li><a href="#reading-list">Reading List</a></li> -->
               </ul>
             </li>
 
           </ul>
         </div>
-        <!-- <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
-        </div>
-      </div> -->
+      </div>
     </header>
     <main>
-      <h1 class="text-center">Alex Harasty</h1>
-      <section id="about">
+      <!-- <section id="about" class="subsection">
         <h2>About</h2>
       </section>
       <hr/>
-      <section id="tech">
+      <section id="tech" class="subsection">
         <h2>Tech</h2>
       </section>
-      <hr/>
-      <section id="projects">
+      <hr/> -->
+      <section class="subsection" id="projects">
         <h2>Projects</h2>
         <p class="lead">I'm trying to be better about deploying stuff I'm working on even if there's nothing much to deploy.</p>
-        <article id="vamtlab" class="grid-x grid-margin-x">
-          <div class="cell small-6 large-4">
-            <div class="card">
-              <img src="/img/vamt.png">
-              <div class="card-section">
-                <h4>Vamtlab 2.0</h4>
-                <p>An app to aggregate and organize <a target="_blank" href="http://www.virginiamocktrial.org/welcome/welcome.php">my old mock trial team's</a> competition data.</p>
-                <a href="https://alexharasty.io/vamtlab/index.html" target="_blank">View Project</a>
+        
+        <article id="vamtlab" class="project ">
+          <h3>Vamtlab 2.0 &nbsp;
+            <a href="https://alexharasty.io/vamtlab/index.html" target="_blank"><i class="icon-lg fi-link"></i></a>
+            <a href="" target="_blank"><i class="fi-social-github icon-lg"></i></a>
+          </h3>
+          <div class="grid-x grid-margin-x">
+            <div class="cell small-4 large-3">
+              <div class="card">
+                <img src="/img/vamt.png">
+                <div class="card-section">
+                  <p>An app to aggregate and organize my old mock trial team's competition data.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="cell small-6 large-8">
-            <h4>Background</h4>
-            <p></p>
-            <h4>The Stack</h4>
-            <ul>
-              <li>S3</li>
-              <li>Route 53</li>
-              <li>Cloudfront</li>
-              <li>Angular 7</li>
-              <li>Angular Material</li>
-              <li>Okta</li>
-              <li>Django/Django Rest Framework</li>
-              <li>Postgres</li>
-              <li>Docker</li>
-            </ul>
-            <h4>Helpful Reading</h4>
-            <ul>
-              <li><a target="_blank" href="https://developer.okta.com/code/angular/okta_angular_sign-in_widget/">Okta Angular Integrations</a></li>
-            </ul>
+            <div class="cell small-8 large-9">
+              <section class="grid-x">
+                <div class="cell small-12 large-12">
+                  <p><a href="http://www.virginiamocktrial.org/welcome/welcome.php" target="_blank" >UVa's Mock Trial Team</a> has been keeping performance data for as far back as I've been a member of the program. 
+                    Aggregating it has been a pain, given that it's stored in one spreadsheet per tournament with inconsistent naming of people and places. I'd aggregated a bunch of the spreadsheets to try and run some scripts on them for cleaning and analysis, but at some point the data entry needs to get sent to a database. 
+                    I'd built an initial version, but the data model was a trainwreck and it seemed easier to blow it away and start over than to fix it. </p>
+                </div>
+                <div class="cell small-6 large-4">
+                  <h4>The Stack</h4>
+                  <ul>
+                    <li>S3</li>
+                    <li>Route 53</li>
+                    <li>Cloudfront</li>
+                    <li>Angular 7</li>
+                    <li>Angular Material</li>
+                    <li>Okta</li>
+                    <li>Django/Django Rest Framework</li>
+                    <li>Postgres</li>
+                    <li>Docker</li>
+                  </ul>
+                </div>
+                <div class="cell small-12 large-4">
+                  <h4>Helpful Reading</h4>
+                  <ul>
+                    <li><a target="_blank" href="https://developer.okta.com/code/angular/okta_angular_sign-in_widget/">Okta Angular Integrations</a></li>
+                    <li><a target="_blank" href="https://dragonprogrammer.com/dockerized-django-api-angular-tutorial/">Dockerized Django/Postgres</a></li>
+                  </ul>
+                </div>
+                
+              </section>
+            </div>
           </div>
         </article>
         <article id="mad" class="grid-x grid-margin-x">
@@ -104,34 +117,6 @@
             <h4>Helpful Reading</h4>
             <ul>
               <li><a target="_blank" href="https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396">Hooking up Google Sheets to a Form</a></li>
-            </ul>
-          </div>
-        </article>
-        <article id="reading-list" class="grid-x grid-margin-x">
-          <div class="cell small-6 large-4">
-            <div class="card">
-              <img src="/img/library.jpeg">
-              <div class="card-section">
-                <h4>Reading List</h4>
-                <p>A simple app to learning about React/Firebase </p>
-                <!-- <a href="#" target="_blank">View Project</a> -->
-              </div>
-            </div>
-          </div>
-          <div class="cell small-6 large-8">
-            <h4>Background</h4>
-            <p></p>
-            <h4>The Stack</h4>
-            <ul>
-              <li>S3</li>
-              <li>Route 53</li>
-              <li>Cloudfront</li>
-              <li>React</li>
-              <li>Firebase</li>
-            </ul>
-            <h4>Helpful Reading</h4>
-            <ul>
-              <!-- <li><a target="_blank" href="https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396">Hooking up Google Sheets to a Form</a></li> -->
             </ul>
           </div>
         </article>
@@ -163,6 +148,33 @@
               </ul>
             </div>
           </article>
+          <!-- <article id="reading-list" class="grid-x grid-margin-x">
+            <div class="cell small-6 large-4">
+              <div class="card">
+                <img src="/img/library.jpeg">
+                <div class="card-section">
+                  <h4>Reading List</h4>
+                  <p>A simple app to learning about React/Firebase </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell small-6 large-8">
+              <h4>Background</h4>
+              <p></p>
+              <h4>The Stack</h4>
+              <ul>
+                <li>S3</li>
+                <li>Route 53</li>
+                <li>Cloudfront</li>
+                <li>React</li>
+                <li>Firebase</li>
+              </ul>
+              <h4>Helpful Reading</h4>
+              <ul>
+                <li><a target="_blank" href="https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396">Hooking up Google Sheets to a Form</a></li>
+              </ul>
+            </div>
+          </article> -->
       </section>
 
     </main>
