@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass"
+    "build": "gulp sass",
+    "bundle": "gulp bundle"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",

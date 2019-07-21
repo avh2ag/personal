@@ -34,3 +34,23 @@ function serve() {
 gulp.task('sass', sass);
 gulp.task('serve', gulp.series('sass', serve));
 gulp.task('default', gulp.series('sass', serve));
+
+/* Make our own little dist build */
+gulp.task('copy-img', function() {
+  return gulp.src('./img/*.*')
+    .pipe(gulp.dest('./dist/img'));
+});
+gulp.task('copy-css', function() {
+  return gulp.src('./css/*.*')
+    .pipe(gulp.dest('./dist/css'));
+});
+gulp.task('copy-js', function() {
+  return gulp.src('./js/*.*')
+    .pipe(gulp.dest('./dist/js'));
+});
+gulp.task('copy-html', function() {
+  return gulp.src('./index.html')
+    .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('bundle', gulp.series('copy-img', 'copy-css', 'copy-js', 'copy-html'));
