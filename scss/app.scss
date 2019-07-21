@@ -70,6 +70,8 @@ html {
 section {
     width: 80%;
     margin: 0 auto;
+    background-color: $white;
+    padding: 0 .5em 0 .5em;
     /* max-height make it the vh */
 }
 
@@ -81,6 +83,7 @@ section.subsection {
 
 main {
     margin-top: 4em;
+    background-color: lighten($light-gray, 10%);
 }
 
 header {
@@ -89,12 +92,24 @@ header {
     width: 100%;
     height: 4em;
     top: 0;
+    color: $primary-color;
+}
+
+header .title {
+    font-size:1.5em;
+    margin-left:.5em;
+    font-weight:bold;
+    vertical-align: middle;
+}
+
+header img.logo {
+    height: 3em;
 }
 
 article.project {
     margin-left: 1em;
     margin-bottom: .5em;
-    border-bottom: 1px dotted #d9d9d9;
+    // background: #d9d9d9;
     padding: 1em;
 }
 
@@ -108,4 +123,17 @@ article.project {
 
 .icon-lg {
     font-size: 32px;
+}
+
+.orbit-previous, .orbit-next {
+    color: $primary-color;
+}
+
+.orbit-slide.is-active {
+    padding: 0 1em;
+}
+
+#nav-menu {
+    padding-left: 5%;
+    padding-right: 5%;
 }
