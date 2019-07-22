@@ -52,5 +52,9 @@ gulp.task('copy-html', function() {
   return gulp.src('./index.html')
     .pipe(gulp.dest('./dist/'));
 });
+gulp.task('copy-utils', function() {
+  return gulp.src('./utils/*.txt')
+    .pipe(gulp.dest('./dist/'));
+})
 
-gulp.task('bundle', gulp.series('copy-img', 'copy-css', 'copy-js', 'copy-html'));
+gulp.task('bundle', gulp.series('copy-img', 'copy-css', 'copy-js', 'copy-html', 'copy-utils'));
