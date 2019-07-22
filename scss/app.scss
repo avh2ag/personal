@@ -75,8 +75,14 @@ section {
     /* max-height make it the vh */
 }
 
+article {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
 section.subsection {
-    height: calc(100vh - 4em);
+    // height: calc(100vh - 4em);
     overflow-y: auto;
     overflow-x: hidden; 
 }
@@ -109,8 +115,6 @@ header img.logo {
 article.project {
     margin-left: 1em;
     margin-bottom: .5em;
-    // background: #d9d9d9;
-    padding: 1em;
 }
 
 .icon-sm {
@@ -136,4 +140,13 @@ article.project {
 #nav-menu {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+td.tech-name {
+    font-weight: bold;
+}
+td.check-mark div {
+    width: 60%;
+    margin: 0 auto;
+    color: green;
 }
