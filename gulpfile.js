@@ -57,4 +57,4 @@ gulp.task('copy-utils', function() {
     .pipe(gulp.dest('./dist/'));
 })
 
-gulp.task('bundle', gulp.series('copy-img', 'copy-css', 'copy-js', 'copy-html', 'copy-utils'));
+gulp.task('bundle', gulp.series('sass', 'copy-img', 'copy-css', 'copy-js', 'copy-html', 'copy-utils'));
