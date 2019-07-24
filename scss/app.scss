@@ -112,11 +112,6 @@ header img.logo {
     height: 3em;
 }
 
-article.project {
-    margin-left: 1em;
-    margin-bottom: .5em;
-}
-
 .icon-sm {
     font-size: 18px;
 }
@@ -144,8 +139,11 @@ article.project {
 
 td.tech-name {
     font-weight: bold;
+    border-right: 1px solid $light-gray;
 }
-td.check-mark div {
+
+
+.tech-table td div {
     width: 60%;
     margin: 0 auto;
     color: green;
