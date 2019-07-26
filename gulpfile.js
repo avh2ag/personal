@@ -5,7 +5,8 @@ var autoprefixer  = require('autoprefixer');
 
 var sassPaths = [
   'node_modules/foundation-sites/scss',
-  'node_modules/motion-ui/src'
+  'node_modules/motion-ui/src',
+  './custom-scss'
 ];
 
 function sass() {
@@ -28,6 +29,7 @@ function serve() {
   });
 
   gulp.watch("scss/*.scss", sass);
+  gulp.watch("custom-scss/*.scss", sass);
   gulp.watch("*.html").on('change', browserSync.reload);
 }
 

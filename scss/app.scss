@@ -62,6 +62,7 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+@import 'hero-orbit';
 
 html {
     scroll-behavior: smooth;

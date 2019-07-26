@@ -296,187 +296,140 @@
       </section>
       <section class="subsection" id="projects">
         <h2>Projects</h2>
-        <hr/>
-        <p class="lead">I'm trying to be better about deploying stuff I'm working on even if there's nothing much to deploy.</p>
-          <div class="orbit" role="region" aria-label="Projects" data-orbit data-auto-play="false">
-            <div class="orbit-wrapper">
-              <div class="orbit-controls">
-                <button class="orbit-previous"><span class="show-for-sr">Previous Project</span>&#9664;&#xFE0E;</button>
-                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-              </div>
-              <article>
-              <ul class="orbit-container">
-                <li class="is-active orbit-slide">
-                  <h3>Vamtlab 2.0 &nbsp;
-                    <a data-tooltip title="View Vamtlab 2.0" href="https://alexharasty.io/vamtlab/index.html" target="_blank"><i class="icon-lg fi-link"></i></a>
-                    <a data-tooltip title="View source" href="https://github.com/avh2ag/vamtlab-2.0" target="_blank"><i class="fi-social-github icon-lg"></i></a>
-                  </h3>
-                  <div class="grid-x grid-margin-x">
-                    <div class="cell small-4 large-3">
-                      <div class="card">
-                        <img src="/img/vamt.png">
-                        <div class="card-section">
-                          <p>An app to aggregate and organize my old mock trial team's competition data.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell small-8 large-9">
-                      <section class="grid-x">
-                        <div class="cell small-12 large-12">
-                          <p><a href="http://www.virginiamocktrial.org/welcome/welcome.php" target="_blank" >UVa's Mock Trial Team</a> has been keeping performance data for as far back as I've been a member of the program. 
-                            Aggregating it has been a pain, given that it's stored in one spreadsheet per tournament with inconsistent naming of people and places. I'd aggregated a bunch of the spreadsheets to try and run some scripts on them for cleaning and analysis, but at some point the data entry needs to get sent to a database. 
-                            I'd built an initial version, but the data model was a trainwreck and it seemed easier to blow it away and start over than to fix it. </p>
-                        </div>
-                        <div class="cell small-12 large-6">
-                          <h4>The Stack</h4>
-                          <ul>
-                            <li>S3</li>
-                            <li>Route 53</li>
-                            <li>Cloudfront</li>
-                            <li>Angular 7</li>
-                            <li>Angular Material</li>
-                            <li>Okta</li>
-                            <li>Django/Django Rest Framework</li>
-                            <li>Postgres</li>
-                            <li>Docker</li>
-                          </ul>
-                        </div>
-                        <div class="cell small-12 large-6">
-                          <h4>Helpful Reading</h4>
-                          <ul>
-                            <li><a target="_blank" href="https://developer.okta.com/code/angular/okta_angular_sign-in_widget/">Okta Angular Integrations</a></li>
-                            <li><a target="_blank" href="https://dragonprogrammer.com/dockerized-django-api-angular-tutorial/">Dockerized Django/Postgres</a></li>
-                          </ul>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-                </li>
-                <li class="orbit-slide">
-                  <h3>Madabolic H Street &nbsp;
-                    <a data-tooltip title="View MAD H Street" href="http://mad-hstreet.com/" target="_blank"><i class="icon-lg fi-link"></i></a>
-                    <a data-tooltip title="View source" href="https://github.com/avh2ag/mad-hst" target="_blank"><i class="fi-social-github icon-lg"></i></a>
-                  </h3>
-                  <div class="grid-x grid-margin-x">
-                    <div class="cell small-4 large-3">
-                        <img src="/img/mad.png">
-                        <div class="card-section">
-                          <p>A static site for getting more information about my favorite gym.</p>
-                        </div>
-                    </div>
-                    <div class="cell small-8 large-9">
-                      <section class="grid-x">
-                        <div class="cell small-12 large-12">
-                          <p>A friend asked me if I could throw together a quick static website ahead of the opening of a new <a target="_blank" href="http://www.madabolic.com/">Madabolic</a> location in DC. I wasn't the original developer of the main website, but I figured it'd be best to stay on brand and use the output HTML from the main site.
-                          It looks like the main developers are using Laravel, and I don't think they'd ever hand over their source code to me, so the code here is semi-spaghetti without the original PHP. I was blown away by how easy it was to pop in a form submission to a google sheet and even more thrown by how developer friendly
-                          Facebook pixels are. If you haven't heard of MAD before, I'd strongly recommend <a href="https://clients.mindbodyonline.com/classic/ws?studioid=451879&stype=43&prodid=10118" target="_blank">trying it out.</a></p>
-                        </div>
-                        <div class="cell small-12 large-6">
-                          <h4>The Stack</h4>
-                          <ul>
-                            <li>S3</li>
-                            <li>Route 53</li>
-                            <li>JQuery</li>
-                            <li>Google Sheets API</li>
-                          </ul>
-                        </div>
-                        <div class="cell small-12 large-6">
-                          <h4>Helpful Reading</h4>
-                          <ul>
-                            <li><a target="_blank" href="https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396">Hooking up Google Sheets to a Form</a></li>
-                          </ul>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-                </li>
-                <li class="orbit-slide">
-                  <h3>Personal Site &nbsp;
-                    <a data-tooltip id="personal-site-link" title="View Personal Site" data-open="personal-site-modal"><i class="icon-lg fi-link"></i></a>
-                    <a data-tooltip title="View source" href="https://github.com/avh2ag/personal" target="_blank"><i class="fi-social-github icon-lg"></i></a>
-                  </h3>
-                  <div class="reveal" id="personal-site-modal" data-reveal>
-                    <h1>You're lookin at it.</h1>
-                    <button class="close-button" data-close aria-label="Close modal" type="button">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="grid-x grid-margin-x">
-                    <div class="cell small-4 large-3">
-                      <img src="/img/code.png">
-                      <div class="card-section">
-                        <h4>Personal Site</h4>
-                        <p>A lesson in personal accountability </p>
-                        <!-- <a href="#" target="_blank">View Project</a> -->
-                      </div>
-                    </div>
-                    <div class="cell small-8 large-9">
-                      <section class="grid-x">
-                        <div class="cell small-12 large-12">
-                          <p>I've been squatting on my own domain name for some time, and figured it's about time to put together a site. A couple of tests with Route 53 and S3 static website hosting made it too cheap not to do.
-                            It seems like a good way to force myself to deploy the things I use as an excuse to learn random tech.
-                          </p>
-                        </div>
-                        <div class="cell small-12 large-6">
-                          <h4>The Stack</h4>
-                          <ul>
-                            <li>S3</li>
-                            <li>Route 53</li>
-                            <li>Cloudfront</li>
-                            <li>Foundation</li>
-                            <li>Gulp</li>
-                            <li>Travis CI</li>
-                          </ul>
-                        </div>
-                        <div class="cell small-12 large-6">
-                          <h4>Helpful Reading</h4>
-                          <ul>
-                            <li><a target="_blank" href="https://renzo.lucioni.xyz/s3-deployment-with-travis/">Travis CI w/ S3</a></li>
-                          </ul>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </article>
+        <hr />
+        <br>
+        <div class="orbit clean-hero-slider" role="region" aria-label="Favorite Space Pictures" data-orbit data-auto-play="false">
+          <nav class="orbit-bullets" style="background:black;">
+            <button class="is-active" data-slide="1"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>
+            <button data-slide="2"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>
+            <button data-slide="3"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>
+          </nav>  
+          <div class="orbit-wrapper">
+            <div class="orbit-controls">
+              <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+              <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
             </div>
-            <nav class="orbit-bullets">
-              <button class="is-active" data-slide="0"><span class="show-for-sr">Vamtlab 2.0</span><span class="show-for-sr">Current Slide</span></button>
-              <button data-slide="1"><span class="show-for-sr">Mad H Street</span></button>
-              <button data-slide="2"><span class="show-for-sr">Personal Site</span></button>
-            </nav>
+            <ul class="orbit-container">
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/mad-hst.svg" >
+                  <figcaption class="orbit-caption">
+                    <h3>Madabolic H Street &nbsp;
+                      <a data-tooltip title="View MAD H Street" href="http://mad-hstreet.com/" target="_blank"><i class="icon-lg fi-link"></i></a>
+                      <a data-tooltip title="View source" href="https://github.com/avh2ag/mad-hst" target="_blank"><i class="fi-social-github icon-lg"></i></a>
+                    </h3>
+                    <p>A static site for getting more information about my favorite gym.</p>
+                    <article class="grid-x">
+                      <div class="cell small-12 large-12">
+                        <p>A friend asked me if I could throw together a quick static website ahead of the opening of a new <a target="_blank" href="http://www.madabolic.com/">Madabolic</a> location in DC. I wasn't the original developer of the main website, but I figured it'd be best to stay on brand and use the output HTML from the main site.
+                        It looks like the main developers are using Laravel, and I don't think they'd ever hand over their source code to me, so the code here is semi-spaghetti without the original PHP. I was blown away by how easy it was to pop in a form submission to a google sheet and even more thrown by how developer friendly
+                        Facebook pixels are. If you haven't heard of MAD before, I'd strongly recommend <a href="https://clients.mindbodyonline.com/classic/ws?studioid=451879&stype=43&prodid=10118" target="_blank">trying it out.</a></p>
+                      </div>
+                      <div class="cell small-12 large-6">
+                        <h4>The Stack</h4>
+                        <ul>
+                          <li>S3</li>
+                          <li>Route 53</li>
+                          <li>JQuery</li>
+                          <li>Google Sheets API</li>
+                        </ul>
+                      </div>
+                      <div class="cell small-12 large-6">
+                        <h4>Helpful Reading</h4>
+                        <ul>
+                          <li><a target="_blank" href="https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396">Hooking up Google Sheets to a Form</a></li>
+                        </ul>
+                      </div>
+                    </article>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/vamt.png" height="500" width="500">
+                  <figcaption class="orbit-caption">
+                    <h3>Vamtlab 2.0 &nbsp;
+                      <a data-tooltip title="View Vamtlab 2.0" href="https://alexharasty.io/vamtlab/index.html" target="_blank"><i class="icon-lg fi-link"></i></a>
+                      <a data-tooltip title="View source" href="https://github.com/avh2ag/vamtlab-2.0" target="_blank"><i class="fi-social-github icon-lg"></i></a>
+                    </h3>
+                    <p>An app to aggregate and organize my old mock trial team's competition data.</p>
+                    <article class="grid-x">
+                      <div class="cell small-12 large-12">
+                        <p><a href="http://www.virginiamocktrial.org/welcome/welcome.php" target="_blank" >UVa's Mock Trial Team</a> has been keeping performance data for as far back as I've been a member of the program. 
+                          Aggregating it has been a pain, given that it's stored in one spreadsheet per tournament with inconsistent naming of people and places. I'd aggregated a bunch of the spreadsheets to try and run some scripts on them for cleaning and analysis, but at some point the data entry needs to get sent to a database. 
+                          I'd built an initial version, but the data model was a trainwreck and it seemed easier to blow it away and start over than to fix it. </p>
+                      </div>
+                      <div class="cell small-12 large-6">
+                        <h4>The Stack</h4>
+                        <ul>
+                          <li>S3</li>
+                          <li>Route 53</li>
+                          <li>Cloudfront</li>
+                          <li>Angular 7</li>
+                          <li>Angular Material</li>
+                          <li>Okta</li>
+                          <li>Django/Django Rest Framework</li>
+                          <li>Postgres</li>
+                          <li>Docker</li>
+                        </ul>
+                      </div>
+                      <div class="cell small-12 large-6">
+                        <h4>Helpful Reading</h4>
+                        <ul>
+                          <li><a target="_blank" href="https://developer.okta.com/code/angular/okta_angular_sign-in_widget/">Okta Angular Integrations</a></li>
+                          <li><a target="_blank" href="https://dragonprogrammer.com/dockerized-django-api-angular-tutorial/">Dockerized Django/Postgres</a></li>
+                        </ul>
+                      </div>                      
+                    </article>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/technology.svg" style="background:white;">
+                  <figcaption class="orbit-caption">
+                    <h3>Personal Site &nbsp;
+                      <a data-tooltip id="personal-site-link" title="View Personal Site" data-open="personal-site-modal"><i class="icon-lg fi-link"></i></a>
+                      <a data-tooltip title="View source" href="https://github.com/avh2ag/personal" target="_blank"><i class="fi-social-github icon-lg"></i></a>
+                    </h3>
+                    <p>A lesson in personal accountability.</p> 
+                    <div class="reveal" id="personal-site-modal" data-reveal>
+                      <h1>You're lookin at it.</h1>
+                      <button class="close-button" data-close aria-label="Close modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <article class="grid-x">
+                      <div class="cell small-12 large-12">
+                        <p>I've been squatting on my own domain name for some time, and figured it's about time to put together a site. A couple of tests with Route 53 and S3 static website hosting made it too cheap not to do.
+                          It seems like a good way to force myself to deploy the things I use as an excuse to learn random tech.
+                        </p>
+                      </div>
+                      <div class="cell small-12 large-6">
+                        <h4>The Stack</h4>
+                        <ul>
+                          <li>S3</li>
+                          <li>Route 53</li>
+                          <li>Cloudfront</li>
+                          <li>Foundation</li>
+                          <li>Gulp</li>
+                          <li>Travis CI</li>
+                        </ul>
+                      </div>
+                      <div class="cell small-12 large-6">
+                        <h4>Helpful Reading</h4>
+                        <ul>
+                          <li><a target="_blank" href="https://renzo.lucioni.xyz/s3-deployment-with-travis/">Travis CI w/ S3</a></li>
+                        </ul>
+                      </div>
+                    </article>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
           </div>
-       
-          <!-- <article id="reading-list" class="grid-x grid-margin-x">
-            <div class="cell small-6 large-4">
-              <div class="card">
-                <img src="/img/library.jpeg">
-                <div class="card-section">
-                  <h4>Reading List</h4>
-                  <p>A simple app to learning about React/Firebase </p>
-                </div>
-              </div>
-            </div>
-            <div class="cell small-6 large-8">
-              <h4>Background</h4>
-              <p></p>
-              <h4>The Stack</h4>
-              <ul>
-                <li>S3</li>
-                <li>Route 53</li>
-                <li>Cloudfront</li>
-                <li>React</li>
-                <li>Firebase</li>
-              </ul>
-              <h4>Helpful Reading</h4>
-              <ul>
-                <li><a target="_blank" href="https://medium.com/@jaejohns/how-to-use-google-sheets-as-your-website-database-b0f2f13d0396">Hooking up Google Sheets to a Form</a></li>
-              </ul>
-            </div>
-          </article> -->
+        </div>
       </section>
-
     </main>
     <footer>
       <ul class="menu align-center">
